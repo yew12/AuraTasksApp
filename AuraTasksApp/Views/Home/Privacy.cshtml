@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Add New Task";
+}
+
+@model AuraTasksApp.Models.Tasks
+
+<h1>@ViewData["Title"]</h1>
+<button 
+
+<form asp-action="CreateEditTask"  asp-controller="Home">
+    <label>Task Item</label>
+    <input type="text" asp-for="TaskItem" >
+
+    <label>Category</label>
+    <input type="text" asp-for="Category" >
+
+    <label>Date</label>
+    <input type="datetime" asp-for="Date" >
+
+    <button class="btn btn-primary mt-4" type="submit">Add</button>
+</form>

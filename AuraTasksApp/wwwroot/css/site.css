@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.floating-div {
+  height: 60vh; /* 60% of the viewport height */
+  max-height: 60vh;
+  margin: 0 auto; /* Centers the div horizontally */
+  background-color: #fff; /* You can change this to your preferred background color */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, and shadow color */
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative; /* Make sure to set relative positioning on the parent div- this allows the button to sit top right */
+}
+
+.table-wrapper {
+  width: 100%;
+  display: block;
+  max-height: 45vh; /* Set max height for the scrollable area */
+  overflow-y: auto; /* Enables vertical scrolling */
+  margin-top: 10px; /* Optional: adds some spacing between the table and the header */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead td {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Solid background to ensure the header does not overlap with table body */
+  z-index: 2;
+}
+
+tbody {
+  height: 100px;       /* Just for the demo          */
+  overflow-y: auto;    /* Trigger vertical scroll    */
+  overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.plus-btn {
+  font-size: 24px; /* Size of the plus sign */
+  /* padding: 10px 10px 10px 10px; */
+  background-color: #005a42; /* Green background */
+  color: white; /* White text */
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  position: absolute; /* Absolute positioning */
+  top: 10px; /* Position from the top of the div */
+  right: 10px; /* Position from the right side of the div */
+}
+  .plus-btn:hover {
+    background-color: #005a42; /* Slightly darker green on hover */
+  }
